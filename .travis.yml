@@ -1,5 +1,9 @@
 language: c
 
+before_install:
+  - git config --global user.email "you@example.com"
+  - git config --global user.name "Your Name"
+
 install:
   - mkdir bin
   - curl https://storage.googleapis.com/git-repo-downloads/repo > bin/repo

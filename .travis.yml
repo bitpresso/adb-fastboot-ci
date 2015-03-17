@@ -1,13 +1,14 @@
 language: c
 
 install:
-  - curl https://storage.googleapis.com/git-repo-downloads/repo > ./repo
-  - chmod a+x ./repo
+  - mkdir bin
+  - curl https://storage.googleapis.com/git-repo-downloads/repo > bin/repo
+  - chmod a+x bin/repo
 
 before_script:
-  - repo init -u https://github.com/bitpresso/android-custom-manifests.git
-  - repo init -m adb-fastboot-for-mac.xml
-  - repo sync
+  - bin/repo init -u https://github.com/bitpresso/android-custom-manifests.git
+  - bin/repo init -m adb-fastboot-for-mac.xml
+  - bin/repo sync
 
 script:
   - make adb fastboot

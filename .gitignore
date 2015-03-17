@@ -1,0 +1,11 @@
+
+# repo client
+repo
+.repo/
+
+# android source tree
+Makefile
+build/
+external/
+prebuilts/
+system/

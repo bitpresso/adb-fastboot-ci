@@ -5,8 +5,8 @@ install:
   - chmod a+x ./repo
 
 before_script:
-  - repo init -u https://github.com/bitpresso/android-custom-manifests.github
-  - repo init -m adb-fastboot-for-linux.xml
+  - repo init -u https://github.com/bitpresso/android-custom-manifests.git
+  - repo init -m adb-fastboot-for-mac.xml
   - repo sync
 
 script:
